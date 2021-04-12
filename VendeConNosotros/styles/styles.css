@@ -22,7 +22,7 @@ main {
 footer {
   padding: 0 120px;
   background-color: #FEF8DA;
-  height: 150px;
+  min-height: 150px;
 }
 
 /* Componente Landing__cinta */
@@ -225,4 +225,54 @@ button {
   height: 140px;
   padding: 0 120px;
   background-color: white;
+}
+
+/* componenete footer */
+.social__iconos {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.social__iconos>i:hover {
+  color: rgb(98, 170, 170);
+}
+
+.social__iconos>i {
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+.menu__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__footer>div {
+  margin: 50px 0 30px;
+  width: 20%;
+}
+
+.menu__footer p {
+  margin-bottom: 7px;
+}
+
+.menu__footer p:hover {
+  color: rgb(98, 170, 170);
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+}
+
+.copyright>span {
+  font-size: 20px;
+  font-weight: bold;
 }
