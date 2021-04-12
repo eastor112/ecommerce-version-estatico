@@ -7,68 +7,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/stylesLogin.css">
 
-  <title>Document</title>
+  <title>Login/Registro</title>
 </head>
 
 <body>
   <nav>
   </nav>
+
   <main>
-    <div class="info">
-      <h3>Solo unos pasos más y podras crear tu <span>propia tienda digital</span></h3>
-      <figure>
-        <img src="http://placehold.it/506x361" alt="">
-      </figure>
+    <div class="sin-cuenta desactivado">
+      <div class="login">
+        <i class="user__icon fa fa-user-circle" aria-hidden="true"></i>
+        <h3 class="titulo__form">Datos de la cuenta</h3>
+        <form class="login__form">
+          <div class="correo">
+            <i class="email__icon fas fa-envelope"></i>
+            <input class='email' type="email" name="" id="" placeholder="Correo electrónico">
+          </div>
+          <div class="password">
+            <i class="lock_icon fa fa-lock" aria-hidden="true"></i>
+            <input class='pass' type="password" name="" id="" placeholder="Contraseña">
+          </div>
+          <div class='password__r'>
+            <i class="lock_icon2 fa fa-lock" aria-hidden="true"></i>
+            <input class='pass2' type="password" name="" id="" placeholder="Reperit contraseña">
+          </div>
+          <div class="aceptar__politicas">
+            <input class='aceptar' type="checkbox" name="" id="">
+            <p class="aceptar__politica">Acepto la <a href="">política de privacidad</a> de Online Shop</p>
+          </div>
+
+          <div class="botones">
+            <button class='registrarse'>Registrarse</button>
+            <button class="registrarse__google">Registrarse con Google</button>
+          </div>
+      </div>
+      <p>¿Ya tienes una cuenta?. <a href="">Inicia sesión</a>.</p>
     </div>
-    <div class="login">
-      <i class="user__icon fa fa-user" aria-hidden="true"></i>
-      <h3 class="titulo__form">Datos de la cuenta</h3>
-      <form class="login__form">
-        <div class="correo">
-          <i class="email__icon fas fa-envelope"></i>
-          <input class='email' type="email" name="" id="" placeholder="Correo electrónico">
-        </div>
-        <div class="pass">
-          <i class="lock_icon fa fa-lock" aria-hidden="true"></i>
-          <input class='pass' type="text" name="" id="" placeholder="Contraseña">
-        </div>
-        <div class='pass__r'>
-          <i class="lock_icon2 fa fa-lock" aria-hidden="true"></i>
-          <input class='pass2' type="text" name="" id="" placeholder="Reperit contraseña">
-        </div>
-        <div class="aceptar__politicas">
-          <input class='aceptar' type="checkbox" name="" id="">
-          <p class="aceptar__politica">Acepto la <a href="">política de privacidad</a> de Online Shop</p>
-        </div>
-        <div class="botones">
-          <button class='registrarse'>Registrarse</button>
-          <button class="registrarse__google">Registrarse con Google</button>
-        </div>
+
+    <div class="con-cuenta">
+      <div class="login">
+        <i class="user__icon fa fa-user-circle" aria-hidden="true"></i>
+        <h3 class="titulo__form">Datos de la cuenta</h3>
+        <form class="login__form">
+          <div class="correo">
+            <i class="email__icon fas fa-envelope"></i>
+            <input class='email' type="email" name="" id="" placeholder="Correo electrónico">
+          </div>
+          <div class="password">
+            <i class="lock_icon fa fa-lock" aria-hidden="true"></i>
+            <input class='pass' type="password" name="" id="" placeholder="Contraseña">
+          </div>
+          <div class="botones">
+            <button class='registrarse'>Iniciar Sesión</button>
+            <button class="registrarse__google">Iniciar sesion con Google</button>
+          </div>
+      </div>
+      <p>¿No tienes una cuenta?. <a href="">Registrate</a>.</p>
     </div>
+
   </main>
+
   <footer>
     <div class="social__iconos">
-      <i class="fa fa-facebook" aria-hidden="true"></i>
-      <i class="fa fa-instagram" aria-hidden="true"></i>
-      <i class="fa fa-youtube" aria-hidden="true"></i>
+      <i class="fab fa-facebook" aria-hidden="true"></i>
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+      <i class="fab fa-youtube" aria-hidden="true"></i>
     </div>
-    <div class="acercade">
-      <h3>Acerca de</h3>
-      <p>Información</p>
+    <div class="menu__footer">
+      <div class="acercade">
+        <h3>Acerca de</h3>
+        <p>¿Quienes Somos?</p>
+        <p>Cobertura de envios</p>
+        <p>Mapa del sitio</p>
+      </div>
+      <div class="contactanos">
+        <h3>Contáctanos</h3>
+        <p>Contactanos por Whatsapp</p>
+        <p>Cambios y devoluciones</p>
+      </div>
+      <div class="soporte">
+        <h3>Soporte</h3>
+        <p>Promociones legales</p>
+        <p>Preguntas frecuentes</p>
+        <p>lorem</p>
+      </div>
+      <div class="legal">
+        <h3>Legal</h3>
+        <p>Términos y condiciones</p>
+        <p>Póliticas de privacidad</p>
+        <p>Pólitica de cookies</p>
+      </div>
     </div>
-    <div class="contactanos">
-      <h3>Contáctanos</h3>
-      <p>Información</p>
-    </div>
-    <div class="soporte">
-      <h3>Soporte</h3>
-      <p>Información</p>
-    </div>
-    <div class="legal">
-      <h3>Legal</h3>
-      <p>Información</p>
+    <div class="copyright">
+      <span>&#169;</span>
+      <p> Copyright - Todos los derechos reservados</p>
     </div>
   </footer>
 </body>
