@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
   <title>Vender</title>
 </head>
 
@@ -17,8 +20,10 @@
     <section class="landing">
       <div class="landing__cinta">
         <h2 class="titulo">Vender en Online Shop</h2>
-        <button class="btn__cuenta">Ingresar a mi cuenta</button>
-        <button class="btn__prueba">Prueba gratuita</button>
+        <div class="botones">
+          <button class="btn__cuenta">Ingresar a mi cuenta</button>
+          <button class="btn__prueba">Prueba gratuita</button>
+        </div>
       </div>
 
       <div class="landing__principal">
@@ -36,7 +41,7 @@
           </div>
         </div>
         <figure class="img__principal">
-          <img src="" alt="">
+          <img src="http://placehold.it/580X450" alt="">
         </figure>
       </div>
     </section>
@@ -45,64 +50,71 @@
       <h2 class="titulo">
         Nuestros planes se ajustan al tamaño de tu negocio
       </h2>
-      <div class="card__planes">
-        <h3 class="titulo">Plan Básico <span>S/. 49.99</span></h3>
-        <h4 class='subtitulo'>Características</h4>
-        <ul class="list__caracteristicas">
-          <li>50 Productos publicados</li>
-          <li>5 productos con alta visibilidas</li>
-          <li>Pasarela de pago incorporada</li>
-          <li>Panel de administración</li>
-          <li>Sistema de inventario</li>
-          <li>Soporte técnico las 24 horas</li>
-        </ul>
-        <a class={link__saber} href="">Saber mas</a>
-        <button class="btn__seleccionar">Seleccionar</button´>
+      <div class="cards">
+        <div class="card__planes">
+          <h3 class="titulo">Plan Básico <span>S/. 49.99</span></h3>
+          <h4 class='subtitulo'>Características</h4>
+          <ul class="list__caracteristicas">
+            <li>50 Productos publicados</li>
+            <li>5 productos con alta visibilidad por semana</li>
+            <li>Pasarela de pago incorporada</li>
+            <li>Panel de administración</li>
+            <li>Sistema de inventario</li>
+            <li>Soporte técnico las 24 horas</li>
+          </ul>
+          <a class={link__saber} href="">Saber mas</a>
+          <button class="btn__seleccionar">Seleccionar</button´>
+        </div>
+        <div class="card__planes">
+          <h3 class="titulo">Plan Estándar <span>S/. 99.99</span></h3>
+          <h4 class='subtitulo'>Características</h4>
+          <ul class="list__caracteristicas">
+            <li>50 Productos publicados</li>
+            <li>5 productos con alta visibilidas</li>
+            <li>Pasarela de pago incorporada</li>
+            <li>Panel de administración</li>
+            <li>Sistema de inventario</li>
+            <li>Soporte técnico las 24 horas</li>
+          </ul>
+          <a class={link__saber} href="">Saber mas</a>
+          <button class="btn__seleccionar">Seleccionar</button´>
+        </div>
+        <div class="card__planes">
+          <h3 class="titulo">Plan Premium <span>S/. 199.99</span></h3>
+          <h4 class='subtitulo'>Características</h4>
+          <ul class="list__caracteristicas">
+            <li>50 Productos publicados</li>
+            <li>5 productos con alta visibilidas</li>
+            <li>Pasarela de pago incorporada</li>
+            <li>Panel de administración</li>
+            <li>Sistema de inventario</li>
+            <li>Soporte técnico las 24 horas</li>
+          </ul>
+          <a class={link__saber} href="">Saber mas</a>
+          <button class="btn__seleccionar">Seleccionar</button´>
+        </div>
       </div>
-      <div class="card__planes">
-        <h3 class="titulo">Plan Estándar <span>S/. 99.99</span></h3>
-        <h4 class='subtitulo'>Características</h4>
-        <ul class="list__caracteristicas">
-          <li>50 Productos publicados</li>
-          <li>5 productos con alta visibilidas</li>
-          <li>Pasarela de pago incorporada</li>
-          <li>Panel de administración</li>
-          <li>Sistema de inventario</li>
-          <li>Soporte técnico las 24 horas</li>
-        </ul>
-        <a class={link__saber} href="">Saber mas</a>
-        <button class="btn__seleccionar">Seleccionar</button´>
-      </div>
-      <div class="card__planes">
-        <h3 class="titulo">Plan Premium <span>S/. 199.99</span></h3>
-        <h4 class='subtitulo'>Características</h4>
-        <ul class="list__caracteristicas">
-          <li>50 Productos publicados</li>
-          <li>5 productos con alta visibilidas</li>
-          <li>Pasarela de pago incorporada</li>
-          <li>Panel de administración</li>
-          <li>Sistema de inventario</li>
-          <li>Soporte técnico las 24 horas</li>
-        </ul>
-        <a class={link__saber} href="">Saber mas</a>
-        <button class="btn__seleccionar">Seleccionar</button´>
-      </div>
+
       <ul class='list__consideraciones'>
         <li>Todos nuestros planes tienen 30 días de prueba</li>
-        <li>¿Tienes dudas? Revisa nuestra sección de <a href="">preguntas frecuentes</a></li>
+        <li>¿Tienes dudas? Revisa nuestra sección de <a href="">Preguntas frecuentes</a></li>
       </ul>
     </section>
+  </main>
 
+  <div class="container__faq">
     <section class="faq">
       <h2 class="titulo">
         Preguntas Frecuentes
       </h2>
       <ul class="faq__preguntas">
-        <li class="pregunta">
+        <li class="pregunta abierto">
           ¿Como es la facturación de la tienda en linea?
-          <p class="desplegable">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Ipsum aliquam possimus eligendi delectus enim expedita nemo tenetur quae fugit qui! Id cum rem repudiandae
-            natus pariatur odio ipsum autem assumenda!
+          <p class="desplegable abierto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione totam omnis laboriosam sit animi ut velit
+            saepe quae, odit blanditiis excepturi modi corporis iste tempora vero fugiat. Ex, ullam ipsa.
+            Natus debitis unde vel ea blanditiis beatae, iste magni quibusdam itaque fuga quasi. Beatae ipsum quas eaque
+            cum exercitationem. Vel sapiente nesciunt id incidunt nobis? Pariatur autem consequatur sunt veniam.
           </p>
         </li>
         <li class="pregunta">
@@ -128,7 +140,15 @@
         </li>
       </ul>
     </section>
-  </main>
+  </div>
+  <div class="landing__cinta bottom">
+    <h2 class="titulo">Vender en Online Shop</h2>
+    <div class="botones">
+      <button class="btn__cuenta">Ingresar a mi cuenta</button>
+      <button class="btn__prueba">Prueba gratuita</button>
+    </div>
+  </div>
+
   <footer>
     <div class="social__iconos">
       <i class="fa fa-facebook" aria-hidden="true"></i>
