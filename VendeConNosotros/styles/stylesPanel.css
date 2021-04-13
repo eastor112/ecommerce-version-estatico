@@ -1,0 +1,133 @@
+@import url('./../../Generales/footer.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  height: 90px;
+  background-color: rgb(77, 182, 182);
+}
+
+main {
+  padding: 30px 60px;
+  display: flex;
+}
+
+
+
+/* Sidebar */
+.menu__sidebar h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.menu__sidebar ul {
+  list-style: none;
+}
+
+.menu__sidebar i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.menu__sidebar li>a {
+  font-size: 22px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #828282;
+}
+
+.menu__sidebar a:hover {
+  color: #1E94E9;
+}
+
+.active {
+  color: #1E94E9 !important;
+  font-weight: 500;
+}
+
+.menu__sidebar li {
+  position: relative;
+}
+
+.menu__sidebar .active::after {
+  content: ' »';
+  position: absolute;
+  right: 0px;
+}
+
+
+
+/* Panel Derecho */
+.panel__derecho {
+  padding: 0 0 0 35px;
+  width: 100%;
+}
+
+/* Panel Derecho > menu top */
+.menu__top {
+  margin-bottom: 55px;
+}
+
+.menu__top h2 {
+  font-size: 16px;
+}
+
+.menu__top ul {
+  margin-top: 16px;
+
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  /* outline: solid 1px; */
+}
+
+.menu__top a {
+  color: #828282;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.menu__top li {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.menu__top li:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.menu__top a:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.menu__top li.active {
+  border-bottom: solid 4px #DEB833;
+  background-color: #eee;
+}
+
+.menu__top li.active>a {
+  color: #000;
+}
+
+/* Panel Derecho > menu principal */
+.menu_principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
