@@ -22,8 +22,6 @@ main {
   display: flex;
 }
 
-
-
 /* Sidebar */
 .menu__sidebar h2 {
   font-size: 36px;
@@ -149,7 +147,6 @@ main {
 .menu_principal>div h3 {
   margin-bottom: 20px;
 }
-
 
 .menu_principal figure {
   overflow: hidden;
