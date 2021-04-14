@@ -1,0 +1,855 @@
+/* --- --- --- --- ESTILOS DE LA VISTA PRINCIPAL --- --- --- --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0px auto;
+  background: #fcfcfd;
+  position: relative;
+}
+
+.fondo-categorias-movil {
+  display: none;
+}
+
+/* --- --- --- --- --- --- --- --- 1. ESTILOS DEL HEADER --- --- --- --- --- --- --- --- */
+
+/*1.1. CONTENEDOR DE LOS ELEMENTOS --- --- --- --- --- --- --- --- --- --- */
+
+/*1.1.1. CONTENEDOR DEL HEADER*/
+.header-contenedor {
+  width: 100%;
+  height: 100px;
+  padding: 20px 60px;
+  background: #fcfcfd;
+}
+
+/*1.1.2. CONTENEDOR DEL NAV, DENTRO DEL HEADER*/
+.nav-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*1.1.3. CONTENEDOR DE ENLACES, DENTRO DEL NAV*/
+.contenedor-enlaces-nav-left {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+
+.contenedor-enlaces-nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 42px;
+  width: 50%;
+}
+
+/*1.1.4 CONTENEDOR DE UN ENLACE*/
+.header-logo,
+.boton-nav-categorias,
+.boton-nav-vender,
+.boton-nav-tienda {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.formulario-contenedor-nav,
+.boton-nav-cuenta,
+.boton-nav-favoritos {
+  margin-right: 15px;
+}
+
+/*1.1.5 CONTENEDOR EN MOVIL*/
+.nav-contenedor-movil {
+  display: none;
+}
+
+.boton-categorias-cerrar-movil {
+  display: none;
+}
+
+/*1.2. ESTILOS DE LOS ENLACES --- --- --- --- --- --- --- --- --- --- */
+
+/*1.2.1. ESTILO DEL TEXTO*/
+.boton-nav-categorias div,
+.boton-nav-vender a,
+.boton-nav-tienda a {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.boton-nav-vender span,
+.boton-nav-tienda span {
+  width: 90px;
+}
+
+/*1.2.2. ANIMACION HOVER DE ENLACES*/
+.boton-nav-categorias div:hover,
+.boton-nav-vender a:hover,
+.boton-nav-tienda a:hover {
+  color: #fcaf18;
+  cursor: pointer;
+}
+
+.boton-nav-cuenta i:hover,
+.boton-nav-favoritos i:hover,
+.boton-nav-carrito i:hover {
+  color: #fcaf18;
+  cursor: pointer;
+}
+
+/*1.2.3. ESTILO DE LOS ICONOS*/
+.boton-nav-categorias i,
+.boton-nav-vender i,
+.boton-nav-tienda i {
+  margin-right: 6px;
+  font-size: 24px;
+}
+
+.boton-nav-cuenta i,
+.boton-nav-favoritos i,
+.boton-nav-carrito i {
+  font-size: 24px;
+  color: black;
+}
+
+/*1.3. ESTILO DEL FORMULARIO --- --- --- --- --- --- --- --- --- --- */
+
+/*1.3.1. ESTILO DEL INPUT BUSCAR*/
+.input-nav-buscar {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid #828282;
+}
+
+.input-nav-buscar::placeholder {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.input-nav-buscar:focus {
+  padding-left: 20px;
+}
+
+/*1.3.2. ESTILO DEL ICONO BUSCAR*/
+.formulario-contenedor-nav {
+  position: relative;
+  width: 100%;
+}
+
+.boton-nav-buscar {
+  position: absolute;
+  bottom: 2px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #828282;
+}
+
+/*1.4. ESTILO DE CATEGORIAS Y SUBCATEGORIAS --- --- --- --- --- --- --- --- --- --- */
+
+/*1.4.1. CREACION DEL GRID*/
+.contenedor-categorias-grid {
+  position: relative;
+}
+
+.grid {
+  width: 80%;
+  display: none;
+  background: #ccc;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 1000;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "categorias subcategorias subcategorias subcategorias";
+  border: 1px solid #828282;
+}
+
+.grid.activo {
+  display: grid;
+}
+
+.grid::before {
+  content: "";
+  display: block;
+  background: transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #E5E5E5;
+  position: absolute;
+  top: -10px;
+  left: 100px;
+}
+
+/*1.4.2. ESTILO DEL BOTON REGRESAR*/
+.grid .boton-regresar {
+  display: none;
+}
+
+/*1.4.3. ESTILO DE LAS CATEGORIAS --- --- --- --- --- --- --- --- --- --- */
+
+/*1.4.3.1. CONTENEDOR DE CATEGORIAS*/
+.contenedor-categorias {
+  background: #E5E5E5;
+}
+
+.grid .contenedor-categorias {
+  grid-area: categorias;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  min-height: 300px;
+}
+
+/*1.4.3.2. ESTILO DE ENLACES DE CATEGORIAS*/
+.grid .contenedor-categorias .subtitulo {
+  font-family: "Montserrat";
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.grid .contenedor-categorias a {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+/*1.4.3.3. ANIMACION HOVER DE ENLACES DE CATEGORIAS*/
+.grid .contenedor-categorias a i {
+  display: none;
+}
+
+.grid .contenedor-categorias a:hover {
+  background: white;
+  font-weight: bold;
+}
+
+.grid .contenedor-categorias a:hover i {
+  font-size: 12px;
+  display: inline-block;
+}
+
+/*1.4.4. ESTILO DE LAS SUBCATEGORIAS --- --- --- --- --- --- --- --- --- --- */
+
+/*1.4.4.1. CONTENEDOR DE SUBCATEGORIAS*/
+.contenedor-subcategorias {
+  background: white;
+}
+
+.grid .contenedor-subcategorias {
+  grid-area: subcategorias;
+  padding-bottom: 40px;
+}
+
+.grid .subcategorias {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+
+.grid .subcategorias.activo {
+  display: grid;
+}
+
+.grid .enlaces-subcategoria-col-1,
+.grid .enlaces-subcategoria-col-2,
+.grid .enlaces-subcategoria-col-3 {
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*1.4.4.2. ESTILO DE ENLACES DE SUBCATEGORIAS*/
+.grid .enlaces-subcategoria-col-1 .subtitulo,
+.grid .enlaces-subcategoria-col-2 .subtitulo,
+.grid .enlaces-subcategoria-col-3 .subtitulo {
+  font-family: "Montserrat";
+  color: black;
+  display: block;
+  font-size: 13px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.grid .enlaces-subcategoria-col-1 a,
+.grid .enlaces-subcategoria-col-2 a,
+.grid .enlaces-subcategoria-col-3 a {
+  font-family: "Montserrat";
+  color: #4C4B4D;
+  display: block;
+  font-size: 12px;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+/*1.4.4.3. ANIMACION HOVER DE ENLACES DE SUBCATEGORIAS*/
+.grid .enlaces-subcategoria-col-1 a:hover,
+.grid .enlaces-subcategoria-col-2 a:hover,
+.grid .enlaces-subcategoria-col-3 a:hover {
+  color: #fcaf18;
+}
+
+/* --- --- --- --- --- --- --- --- 4. ESTILOS DE TARJETAS --- --- --- --- --- --- --- --- */
+
+/*4.1. CONTENEDOR DE LOS ELEMENTOS --- --- --- --- --- --- --- --- --- --- */
+.tarjeta-producto, .tarjeta-tienda {
+  width: 220px;
+  height: 330px;
+  background: #E5E5E5;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.tarjeta-producto:hover, .tarjeta-tienda:hover {
+  cursor: pointer;
+}
+
+.tarjeta-producto-detalle, .tarjeta-tienda-detalle {
+  height: 104px;
+}
+
+/*4.2. IMAGEN DE LA TARJETA --- --- --- --- --- --- --- --- --- --- */
+.tarjeta-producto-imagen, .tarjeta-tienda-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tarjeta-producto-imagen figure, .tarjeta-tienda-imagen figure {
+  width: 180px;
+  height: 120px;
+}
+
+.tarjeta-producto-imagen img, .tarjeta-tienda-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*4.3. CONTENIDO DE LA TARJETA --- --- --- --- --- --- --- --- --- --- */
+.tarjeta-producto-nombre, .tarjeta-tienda-nombre {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tarjeta-producto-descripcion, .tarjeta-tienda-descripcion {
+  font-family: "Montserrat";
+  text-align: justify;
+  line-height: 15px;
+  font-size: 11px;
+}
+
+.tarjeta-producto-precio {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 16px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translate(-50%);
+}
+
+/*4.4. BOTON AGREGAR CARRITO O VISITAR TIENDA DE LA TARJETA --- --- --- --- --- --- --- --- --- --- */
+.boton-tarjeta-addCarrito, .boton-tarjeta-irTienda {
+  width: 130px;
+  height: 30px;
+  background: #4247D4;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 12px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 45px;
+}
+
+.boton-tarjeta-irTienda {
+  background: violet;
+}
+
+
+.boton-tarjeta-addCarrito:hover, .boton-tarjeta-irTienda:hover {
+  border: 2px solid black;
+}
+
+/*4.5. BOTON FAVORITOS DE LA TARJETA --- --- --- --- --- --- --- --- --- --- */
+.boton-tarjeta-favoritos {
+  background: none;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  z-index: 100;
+  top: 3px;
+  right: 3px
+}
+
+/* --- --- --- --- --- --- --- --- 5. CARRUSEL DE TARJETAS --- --- --- --- --- --- --- --- */
+
+/*5.1. CONTENEDOR DE CARRUSEL*/
+.contenedor-carrusel-tarjetas, .contenedor-carrusel-tiendas {
+  padding: 0px 60px;
+  margin-top: 60px;
+}
+
+.titulo-contenedor-carrusel {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.contenedor-carrusel-anuncio {
+  padding: 0px 60px;
+  margin-bottom: 60px;
+}
+
+
+/*5.2. CARRUSEL DE TARJETAS*/
+.carousel-cell-visto {
+  margin-right: 15px;
+}
+
+.carousel-cell-vendido {
+  margin-right: 15px;
+}
+
+.carousel-cell-ofertas {
+  margin-right: 15px;
+}
+
+.carousel-cell-tienda {
+  margin-right: 15px;
+}
+
+.carousel-cell-anuncio {
+  width: 100%;
+  height: 50vh;
+  margin-right: 10px;
+  border: 1px solid;
+}
+
+.carousel-cell-anuncio figure {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-cell-anuncio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* --- --- --- --- --- --- --- --- 6. PIE DE PAGINA --- --- --- --- --- --- --- --- */
+
+/*6.1. CONTENEDOR DE LOS ELEMENTOS --- --- --- --- --- --- --- --- --- --- */
+.footer-contenedor {
+  background: #F3E0D2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.redes-sociales-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedor-enlaces-footer {
+  padding: 0px 60px;
+  width: 100%;
+}
+
+.enlaces-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  height: 110px;
+  padding: 10px;
+}
+
+.redes-sociales-contenedor div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+/*6.2. ESTILO DE ENLACES DEL FOOTER --- --- --- --- --- --- --- --- --- --- */
+.redes-sociales-contenedor div a {
+  color: black;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.titulo-enlaces-footer {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.enlaces-footer a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- --- --- --- --- --- --- --- 2. MEDIAQUERY PARA TABLET --- --- --- --- --- --- --- --- */
+
+@media (max-width: 1024px) {
+/*2.1. CONTENEDOR DE LOS ELEMENTOS --- --- --- --- --- --- --- --- --- --- */
+
+/*2.1.1. CONTENEDOR DEL HEADER*/
+.header-contenedor {
+  position: relative;
+  height: 112px;
+  margin-bottom: 30px;
+}
+
+/*2.1.2. CONTENEDOR DEL INPUT BUSCAR*/
+.formulario-contenedor-nav {
+  position: absolute;
+  right: 45px;
+  bottom: 3px;
+  width: 50%;
+}
+
+/*2.1.3. CONTENEDOR DE LOS ENLACES*/
+.boton-nav-vender {
+  position: absolute;
+  left: 60px;
+  bottom: 6px;
+}
+
+.boton-nav-tienda {
+  position: absolute;
+  left: 180px;
+  bottom: 6px;
+}
+
+/*2.1.4. CONTENEDOR DEL GRID*/
+.grid {
+  width: 100%;
+}
+
+}
+
+/* --- --- --- --- --- --- --- --- 3. MEDIAQUERY PARA MOVIL --- --- --- --- --- --- --- --- */
+
+@media (max-width: 768px) {
+/*3.1. CONTENEDOR DE LOS ELEMENTOS --- --- --- --- --- --- --- --- --- --- */
+
+/*3.1.1. CONTENEDOR DEL HEADER*/
+.header-contenedor {
+  height: unset;
+  position: relative;
+  padding: 10px 10px;
+}
+
+/*3.1.2. CONTENEDOR DE ENLACES, DENTRO DEL NAV*/
+.header-contenedor .boton-nav-categorias,
+.header-contenedor .boton-nav-cuenta,
+.header-contenedor .boton-nav-favoritos,
+.header-contenedor .formulario-contenedor-nav {
+  display: none;
+}
+
+/*3.1.3. CONTENEDOR DE UN ENLACE, DENTRO DEL NAV*/
+.boton-nav-vender {
+  top: 10px;
+  left: 100px;
+  height: 42px;
+}
+
+.boton-nav-tienda {
+  top: 10px;
+  left: 133px;
+  height: 42px;
+}
+
+/*3.1.4. CONTENEDOR NAV MOVIL*/
+.nav-contenedor-movil {
+  width: 100%;
+  background: #E5E5E5;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  height: 50px;
+  z-index: 500;
+  border: 1px solid;
+}
+
+.fondo-categorias-movil.activo {
+  position: absolute;
+  display: unset;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 600;
+}
+
+/*3.1.5. CONTENEDOR DE CARRUSEL*/
+.contenedor-carrusel-anuncio, 
+.contenedor-carrusel-tarjetas,
+.contenedor-carrusel-tiendas {
+  padding: 0px 10px;
+}
+
+/*3.1.6. CONTENEDOR ENLACES FOOTER*/
+
+.footer-contenedor {
+  margin-bottom: 50px;
+}
+
+.contenedor-enlaces-footer {
+  padding: 0px 10px;
+}
+
+/*3.2. ESTILOS DE LOS ENLACES --- --- --- --- --- --- --- --- --- --- */
+
+/*3.2.1. ESTILOS DEL TEXTO*/
+.boton-nav-vender span,
+.boton-nav-tienda span {
+  display: none;
+}
+
+/*3.2.2. ESTILOS DE LOS ICONOS*/
+.boton-nav-vender i,
+.boton-nav-tienda i {
+  margin-right: unset;
+}
+
+.nav-contenedor-movil .boton-nav-categorias {
+  background: none;
+  border: none;
+}
+
+.nav-contenedor-movil .boton-nav-categorias i {
+  margin-right: unset;
+}
+
+.nav-contenedor-movil .boton-nav-buscar {
+  display: flex;
+  align-items: center;
+  position: unset;
+  color: black;
+}
+
+.boton-categorias-cerrar-movil.activo {
+  display: unset;
+  position: absolute;
+  border: none;
+  background: none;
+  font-size: 30px;
+  top: 20px;
+  right: 30px;
+  color: white;
+  z-index: 600;
+}
+
+/*3.2.3. ANIMACION HOVER DE ENLACES*/
+.nav-contenedor-movil .boton-nav-categorias:hover {
+  color: #fcaf18;
+  cursor: pointer;
+}
+
+.nav-contenedor-movil .boton-nav-buscar:hover {
+  color: #fcaf18;
+  cursor: pointer;
+}
+
+/*3.3. ESTILO DE CATEGORIAS Y SUBCATEGORIAS --- --- --- --- --- --- --- --- --- --- */
+
+/*3.3.1. CREACION DEL GRID*/
+.grid {
+  display: grid;
+  transition: 0.3s ease all;
+  transform: translateX(-100%);
+  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  grid-template-areas: "categorias categorias categorias categorias";
+}
+
+.grid.activo {
+  transform: translateX(0);
+}
+
+.grid::before {
+  display: none;
+}
+
+/*3.3.2. ESTILO DEL BOTON REGRESAR*/
+.grid .boton-regresar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: none;
+  padding: 20px 0px;
+  border: none;
+  border-bottom: 2px solid #828282;
+  cursor: pointer;
+  width: 100%;
+}
+
+.grid .boton-regresar > i {
+  margin-right: 10px;
+}
+
+.grid .boton-regresar:hover {
+  color: #fcaf18;
+}
+
+/*3.3.3. ESTILO DE LAS CATEGORIAS*/
+
+/*3.3.3.1. CONTENEDOR DE CATEGORIAS*/
+.grid .contenedor-categorias {
+  padding-top: 30px;
+}
+
+/*3.3.3.2. ESTILO DE ENLACES DE CATEGORIAS*/
+.grid .contenedor-categorias .subtitulo {
+  padding-left: 20px;
+}
+
+.grid .contenedor-categorias a {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/*3.3.4. ESTILO DE LAS SUBCATEGORIAS*/
+
+/*3.3.4.1. CONTENEDOR DE SUBCATEGORIAS*/
+.grid .contenedor-subcategorias {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  overflow: auto;
+  transition: 0.3s ease all;
+}
+
+.grid .contenedor-subcategorias.activo {
+  transform: translateX(0);
+}
+
+.grid .contenedor-subcategorias .subcategoria{
+  grid-template-columns: 1fr;
+}
+
+.grid .enlaces-subcategoria-col-1 {
+  border: 1px solid;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid .enlaces-subcategoria-col-2 {
+  border: 1px solid;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid .enlaces-subcategoria-col-3 {
+  border: 1px solid;
+  width: 100%;
+  position: absolute;
+  top: 800px;
+  height: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*3.3.4.2. ESTILO DE ENLACES DE SUBCATEGORIAS*/
+.grid .enlaces-subcategoria-col-1 .subtitulo,
+.grid .enlaces-subcategoria-col-2 .subtitulo,
+.grid .enlaces-subcategoria-col-3 .subtitulo {
+  margin-top: 20px;
+}
+
+}
+
+
+
+
+
+
