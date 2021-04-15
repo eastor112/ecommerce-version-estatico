@@ -10,10 +10,10 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 
-/* nav {
+nav {
   height: 90px;
   background-color: rgb(77, 182, 182);
-} */
+}
 
 main {
   padding: 0 120px;
@@ -51,6 +51,11 @@ main {
 
 .btn:hover{
   background-color: #1c0790 !important;
+}
+
+.card__mod:hover{
+  border-radius: 25px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
 }
 
 .sin_subrayado{
