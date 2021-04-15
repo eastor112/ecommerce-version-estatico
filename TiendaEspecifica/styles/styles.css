@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* nav {
+  height: 90px;
+  background-color: rgb(77, 182, 182);
+} */
+
+main {
+  padding: 0 120px;
+}
+
+#footer {
+  padding: 0 120px;
+  background-color: #FEF8DA;
+  min-height: 150px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Portada */
+.portada {
+  display: flex;
+  flex: 1;
+  background-size: cover ;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+}
+
+.card__mod{
+  border-radius: 25px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boton__productos{
+  background-color: #4227d4 !important;
+  color: #fff !important;
+  border-radius: 15px !important;
+}
+
+.btn:hover{
+  background-color: #1c0790 !important;
+}
+
+.sin_subrayado{
+  text-decoration: none !important;
+}
+
+.datos{
+  background: #dedcdc;
+  border-radius: 25px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+/* Componente Landing */
+.landing__principal {
+  /* height: 620px; */
+  /* padding: 85px 0 85px 0; */
+  display: flex;
+  border-bottom: solid 1px #ddd;
+}
+
+.titulo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+
+.landing__principal .productos {
+  font-size: 24px;
+  line-height: 45px;
+  margin-bottom: 41px;
+}
+
+.btn__precios {
+  color: #111;
+  border-style: solid;
+  margin-left: 10px;
+}
+
+.btn__precios:hover {
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  border: solid 1px;
+}
+
+/* Componente planes */
+.planes {
+  height: 790px;
+  padding-top: 110px;
+}
+
+.planes .titulo {
+  font-size: 28px;
+  margin-bottom: 26px;
+}
+
+.planes .cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__planes {
+  width: 340px;
+  height: 490px;
+  border: solid 1px #828282;
+  border-radius: 15px;
+}
+
+.card__planes .titulo {
+  margin-top: 51px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.card__planes .subtitulo {
+  font-size: 22px;
+  margin-top: 51px;
+  margin-bottom: 14px;
+  margin-left: 27px;
+}
+
+.card__planes .list__caracteristicas {
+  list-style: none;
+  margin-left: 27px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.card__planes a {
+  display: block;
+  margin-left: 27px;
+}
+
+.card__planes .btn__seleccionar {
+  display: block;
+  background-color: #12BF23;
+  margin: 18px auto 0px;
+}
+
+.card__planes .btn__seleccionar:hover {
+  background-color: #15b425;
+  color: #eee;
+  cursor: pointer;
+}
+
+.list__consideraciones {
+  list-style: none;
+  color: #828282;
+  margin-top: 5px;
+}
+
+/* Componente preguntas frecuentes */
+.container__faq {
+  background-color: #FEF8DA;
+  padding-top: 71px;
+  border-top: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+}
+
+.container__faq .titulo {
+  font-size: 28px;
+}
+
+.faq {
+  min-height: 400px;
+  padding: 0 120px;
+}
+
+.faq__preguntas {
+  list-style: none;
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #828282;
+}
+
+.faq__preguntas li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.faq .desplegable {
+  display: none;
+}
+
+.pregunta.abierto {
+  color: black;
+}
+
+.pregunta.abierto .desplegable {
+  display: block;
+  padding-left: 20px;
+  font-weight: normal;
+  background-color: #fff;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.landing__cinta.bottom {
+  height: 140px;
+  padding: 0 120px;
+  background-color: white;
+}
+
+/* componenete footer */
+#footer > .social__iconos {
+  padding-top: 40px ;
+  text-align: center;
+}
+
+#footer > .social__iconos>i:hover {
+  color: rgb(98, 170, 170);
+}
+
+#footer > .social__iconos>i {
+  font-size: 30px;
+  margin: 0 20px;
+}
+
+#footer > .menu__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer > .menu__footer>div {
+  margin: 50px 0 30px;
+  width: 20%;
+}
+
+#footer > .menu__footer p {
+  margin-bottom: 7px;
+}
+
+#footer > .menu__footer p:hover {
+  color: rgb(98, 170, 170);
+  cursor: pointer;
+}
+
+#footer > .copyright {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+}
+
+#footer > .copyright>span {
+  font-size: 20px;
+  font-weight: bold;
+}
