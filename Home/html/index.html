@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fondo-categorias-movil" id="fondo-categorias-movil"></div>
+    <header class="header-contenedor">
+      <div>
+        <button class="boton-categorias-cerrar-movil">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="nav-contenedor">
+        <div class="contenedor-enlaces-nav-left">
+          <div class="header-logo">
+            <img src="./Logo Tienda 3.jpg" alt="" width="72">
+          </div>
+          <div class="boton-nav-categorias" id="boton-nav-categorias">
+            <div>
+              <i class='bx bx-category'></i>
+              <span>Categorias</span>
+            </div>
+          </div>
+          <div class="boton-nav-vender">
+            <a href="#">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Vender con nosotros</span>
+            </a>
+          </div>
+          <div class="boton-nav-tienda">
+            <a href="#">
+              <i class='bx bx-store-alt' ></i>
+              <span>Ingresa a tu tienda</span>
+            </a>
+          </div>
+        </div>
+        <div class="contenedor-enlaces-nav-right">
+          <form class="formulario-contenedor-nav">
+            <input type="search" class="input-nav-buscar" placeholder="buscar">
+            <button class="boton-nav-buscar">
+              <i class='bx bx-search-alt-2' ></i>
+            </button>
+          </form>
+          <div class="boton-nav-cuenta">
+            <a href="">
+              <i class='bx bx-user' ></i>
+            </a>
+          </div>
+          <div class="boton-nav-favoritos">
+            <a href="">
+              <i class='bx bx-heart' ></i>
+            </a>
+          </div>
+          <div class="boton-nav-carrito">
+            <a href="">
+              <i class='bx bx-cart' ></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="contenedor-categorias-grid">
+        <div class="grid" id="grid">
+          <div class="contenedor-categorias">
+            <h3 class="subtitulo">Todas las categorias</h3>
+            <a href="" data-categoria="celulares-y-tablets">Celulares y tablets<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="tv-audio-y-foto">TV, audio y foto<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="consolas-y-videojuegos">Consolas y videojuegos<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="computacion">Computacion<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="hogar">Hogar<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="electrohogar">Electrohogar<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="moda">Moda<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="relojes-y-accesorios">Relojes y accesorios<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="belleza-y-cuidado-personal">Belleza y cuidado personal<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="salud-y-bienestar">Salud y bienestar<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="juguetes-niños-y-bebes">Juguetes, niños y bebés<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="deportes">Deportes<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="supermercado-y-mascota">Supermercado y mascota<i class="fas fa-chevron-right"></i></a>
+            <a href="" data-categoria="libros">Libros<i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div class="contenedor-subcategorias" id="contenedor-subcategorias">
+            <div class="subcategorias" data-categoria="celulares-y-tablets">
+              <div class="enlaces-subcategoria-col-1">
+                <button class="boton-regresar">
+                  <i class="fas fa-arrow-left"></i>
+                  Todas las categorias
+                </button>
+                <h3 class="subtitulo">Celulares y Smartphones</h3>
+                <a href="">Celulares Samsung</a>
+                <a href="">Celulares Iphone</a>
+                <a href="">Celulares Huawei</a>
+                <a href="">Celulares Sony</a>
+                <a href="">Celulares Xiaomi</a>
+                <a href="">Celulares LG</a>
+                <a href="">Celulares Motorola</a>
+                <a href="">Celulares OnePlus</a>
+                <a href="">Celulares Asus</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-2">
+                <h3 class="subtitulo">Tablets y Ipads</h3>
+                <a href="">Tablets Samsung</a>
+                <a href="">Ipads</a>
+                <a href="">Tablets Huawei</a>
+                <a href="">Tablets Lenovo</a>
+                <a href="">Tablets Amazon</a>
+                <a href="">Tablets Advance</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-3">
+                <h3 class="subtitulo">Accesorios para celulares</h3>
+                <a href="">Baterias</a>
+                <a href="">Cargadores y Cables</a>
+                <a href="">Adaptadores</a>
+                <a href="">Audifonos</a>
+                <a href="">Fundas y Protectores</a>
+                <a href="">Memorias</a>
+                <a href="">Colgantes y Soportes</a>
+                <a href="">Otros</a>
+              </div>
+            </div>
+            <div class="subcategorias" data-categoria="tv-audio-y-foto">
+              <div class="enlaces-subcategoria-col-1">
+                <button class="boton-regresar">
+                  <i class="fas fa-arrow-left"></i>
+                  Todas las categorias
+                </button>
+                <h3 class="subtitulo">Television y Video</h3>
+                <a href="">Televisores</a>
+                <a href="">TV Internet</a>
+                <a href="">Home Theater</a>
+                <a href="">Proyectores</a>
+                <a href="">Reproductores de video</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-2">
+                <h3 class="subtitulo">Audio</h3>
+                <a href="">Audifonos</a>
+                <a href="">Docks y Parlantes</a>
+                <a href="">Soundbar</a>
+                <a href="">Micro y Minicomponente</a>
+                <a href="">Audio Profesional</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-3">
+                <h3 class="subtitulo">Cámaras y Lentes</h3>
+                <a href="">Cámaras Profesionales</a>
+                <a href="">Cámaras Deportivas</a>
+                <a href="">Cámaras de Seguridad</a>
+                <a href="">Accesorios de Cámaras</a>
+                <a href="">Drones</a>
+                <a href="">Otros</a>
+              </div>
+            </div>
+            <div class="subcategorias" data-categoria="consolas-y-videojuegos">
+              <div class="enlaces-subcategoria-col-1">
+                <button class="boton-regresar">
+                  <i class="fas fa-arrow-left"></i>
+                  Todas las categorias
+                </button>
+                <h3 class="subtitulo">Play Station</h3>
+                <a href="">Consolas</a>
+                <a href="">Juegos</a>
+                <a href="">Accesorios</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-2">
+                <h3 class="subtitulo">Nintendo</h3>
+                <a href="">Consolas</a>
+                <a href="">Juegos</a>
+                <a href="">Accesorios</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-3">
+                <h3 class="subtitulo">Xbox</h3>
+                <a href="">Consolas</a>
+                <a href="">Juegos</a>
+                <a href="">Accesorios</a>
+                <a href="">Otros</a>
+              </div>
+            </div>
+            <div class="subcategorias" data-categoria="computacion">
+              <div class="enlaces-subcategoria-col-1">
+                <button class="boton-regresar">
+                  <i class="fas fa-arrow-left"></i>
+                  Todas las categorias
+                </button>
+                <h3 class="subtitulo">Computación</h3>
+                <a href="">Laptos</a>
+                <a href="">Tablets</a>
+                <a href="">All-in-One</a>
+                <a href="">Monitores</a>
+                <a href="">Accesorios de computadoras</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-2">
+                <h3 class="subtitulo">Zona Gamer</h3>
+                <a href="">Laptops gamer</a>
+                <a href="">Monitores</a>
+                <a href="">Accesorios</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-3">
+                <h3 class="subtitulo">Impresoras y Multifuncionales</h3>
+                <a href="">Impresoras</a>
+                <a href="">Multifuncionales</a>
+                <a href="">Escáner</a>
+                <a href="">Consumibles</a>
+                <a href="">Otros</a>
+              </div>
+            </div>
+            <div class="subcategorias" data-categoria="hogar">
+              <div class="enlaces-subcategoria-col-1">
+                <button class="boton-regresar">
+                  <i class="fas fa-arrow-left"></i>
+                  Todas las categorias
+                </button>
+                <h3 class="subtitulo">Muebles</h3>
+                <a href="">Sala</a>
+                <a href="">Dormitorio</a>
+                <a href="">Cocina</a>
+                <a href="">Oficina</a>
+                <a href="">Exteriores</a>
+                <a href="">Sillas</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-2">
+                <h3 class="subtitulo">Colchones, Box y Almohadas</h3>
+                <a href="">Colchones</a>
+                <a href="">Boxes</a>
+                <a href="">Almohadas</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-3">
+                <h3 class="subtitulo">Articulos de Cocina</h3>
+                <a href="">Ollas y Sartenes</a>
+                <a href="">Cubiertos y Cuchillos</a>
+                <a href="">Utensilios</a>
+                <a href="">Reposteria</a>
+                <a href="">Otros</a>
+                <h3 class="subtitulo">Articulos de Baño</h3>
+                <a href="">Toallas</a>
+                <a href="">Alfombras</a>
+                <a href="">Accesorios</a>
+                <a href="">Otros</a>
+              </div>
+            </div>
+            <div class="subcategorias" data-categoria="electrohogar">
+              <div class="enlaces-subcategoria-col-1">
+                <button class="boton-regresar">
+                  <i class="fas fa-arrow-left"></i>
+                  Todas las categorias
+                </button>
+                <h3 class="subtitulo">Linea Blanca</h3>
+                <a href="">Refrigeradoras</a>
+                <a href="">Congeladoras</a>
+                <a href="">Lavado y secado</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-2">
+                <h3 class="subtitulo">Cocinas y hornos</h3>
+                <a href="">Cocinas</a>
+                <a href="">Hornos empotrables</a>
+                <a href="">Campanas extractoras</a>
+                <a href="">Encimeras</a>
+                <a href="">Otros</a>
+              </div>
+              <div class="enlaces-subcategoria-col-3">
+                <h3 class="subtitulo">Climatizacion</h3>
+                <a href="">Ventiladores</a>
+                <a href="">Aires acondicionados</a>
+                <a href="">Termas y Rapiduchas</a>
+                <a href="">Deshumedecedores</a>
+                <a href="">Calefacciones</a>
+                <a href="">Otros</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-contenedor-movil">
+      <button class="boton-nav-categorias" id="boton-nav-categorias-movil">
+        <i class='bx bx-category'></i>
+      </button>
+      <a href="#" class="boton-nav-cuenta">
+        <i class='bx bx-user' ></i>
+      </a>
+      <a href="#" class="boton-nav-favoritos">
+        <i class='bx bx-heart' ></i>
+      </a>
+      <button class="boton-nav-buscar">
+        <i class='bx bx-search-alt-2' ></i>
+      </button>
+    </nav>
+
+    <main>
+
+      <section class="contenedor-carrusel-anuncio">
+        <div class="main-carousel-anuncio">
+          <div class="carousel-cell-anuncio">
+            <figure>
+              <img src="http://placehold.it/180x130" alt="">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="contenedor-carrusel-tarjetas">
+        <h3 class="titulo-contenedor-carrusel">Lo más visto</h3>
+        <div class="main-carousel-visto">
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-visto">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contenedor-carrusel-tarjetas">
+        <h3 class="titulo-contenedor-carrusel">Lo más vendido</h3>
+        <div class="main-carousel-vendido">
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-vendido">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contenedor-carrusel-tarjetas">
+        <h3 class="titulo-contenedor-carrusel">Las mejores ofertas</h3>
+        <div class="main-carousel-ofertas">
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+          <div class="carousel-cell-ofertas">
+            <div class="tarjeta-producto">
+              <button class="boton-tarjeta-favoritos">
+                <i class='bx bx-heart' ></i>
+              </button>
+              <div class="tarjeta-producto-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-producto-detalle">
+                <h3 class="tarjeta-producto-nombre">Nombre del producto y algunas caracteristicas</h3>
+                <p class="tarjeta-producto-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+                <p class="tarjeta-producto-precio">S/ 200</p>
+              </div>
+              <button class="boton-tarjeta-addCarrito" type="button">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contenedor-carrusel-tiendas">
+        <h3 class="titulo-contenedor-carrusel">Nuestras tiendas</h3>
+        <div class="main-carousel-tienda">
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+          <div class="carousel-cell-tienda">
+            <div class="tarjeta-tienda">
+              <div class="tarjeta-tienda-imagen">
+                <figure>
+                  <img src="http://placehold.it/180x120" alt="" >
+                </figure>
+              </div>
+              <div class="tarjeta-tienda-detalle">
+                <h3 class="tarjeta-tienda-nombre">Nombre de la tienda</h3>
+                <p class="tarjeta-tienda-descripcion">
+                  Zapato puma de todas las tallas y en diferentes colores y estilos. El material 
+                  e
+                </p>
+              </div>
+              <button class="boton-tarjeta-irTienda" type="button">Visitar Tienda</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer-contenedor">
+      <div class="row redes-sociales-contenedor">
+        <div class="col-1">
+          <a href="">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      <div class="row contenedor-enlaces-footer">
+        <div class="col-6 left-enlaces-footer">
+          <div class="row">
+            <div class="col-sm-12 col-xl-6 enlaces-footer">
+              <h3 class="titulo-enlaces-footer">Acerca de</h3>
+              <a href="">¿Quienes somos?</a>
+              <a href="">Cobertura de envios</a>
+              <a href="">Mapa de sitio</a>
+            </div>
+            <div class="col-sm-12 col-xl-6 enlaces-footer">
+              <h3 class="titulo-enlaces-footer">Contáctanos</h3>
+              <a href="">Contactanos por Whatsapp</a>
+              <a href="">Cambios y Devoluciones</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 right-enlaces-footer">
+          <div class="row">
+            <div class="col-sm-12 col-xl-6 enlaces-footer">
+              <h3 class="titulo-enlaces-footer">Servicio al Cliente</h3>
+              <a href="">Promocion Legales</a>
+              <a href="">Preguntas Frecuentes</a>
+            </div>
+            <div class="col-sm-12 col-xl-6 enlaces-footer">
+              <h3 class="titulo-enlaces-footer">Lega</h3>
+              <a href="">Términos y Condiciones</a>
+              <a href="">Politicas de Privacidad</a>
+              <a href="">Politicas de Cookies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!--http://placehold.it/180x130-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./../js/index.js"></script>
+  </body>
+</html>
