@@ -1,0 +1,49 @@
+/* --- --- --- --- --- --- --- --- 1. ESTILOS DEL HEADER --- --- --- --- --- --- --- --- */
+
+/*1.1. CONTENEDOR DE LOS ELEMENTOS --- --- --- --- --- --- --- --- --- --- */
+
+/*1.1.1. CONTENEDOR DEL HEADER*/
+.header-contenedor {
+    width: 100%;
+    height: 100px;
+    padding: 20px 60px;
+    background: #fcfcfd;
+  }
+  
+  /*1.1.2. CONTENEDOR DEL NAV, DENTRO DEL HEADER*/
+  .nav-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*1.1.3. CONTENEDOR DE ENLACES, DENTRO DEL NAV*/
+  .contenedor-enlaces-nav-left {
+    display: flex;
+    align-items: center;
+    height: 42px;
+  }
+  
+  .contenedor-enlaces-nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 42px;
+    width: 50%;
+  }
+  
+  /*1.1.4 CONTENEDOR DE UN ENLACE*/
+  .header-logo,
+  .boton-nav-categorias,
+  .boton-nav-vender,
+  .boton-nav-tienda {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .formulario-contenedor-nav,
+  .boton-nav-cuenta,
+  .boton-nav-favoritos {
+    margin-right: 15px;
+  }
