@@ -9,10 +9,12 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./../css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./css/vendeNosotros.css">
   <title>Document</title>
 </head>
 
@@ -348,9 +350,137 @@
   </nav>
 
 
-  <main>
+  <main class="vender">
+    <section class="landing">
+      <div class="landing__cinta">
+        <h2 class="titulo">Vender en Online Shop</h2>
+        <div class="botones">
+          <button class="btn__cuenta">Ingresar a mi cuenta</button>
+          <button class="btn__prueba">Prueba gratuita</button>
+        </div>
+      </div>
 
+      <div class="landing__principal">
+        <div class="inf__principal">
+          <h2 class="titulo">
+            Lleva tu negocio al mundo digital. Somos la mejor opción para crear tu tienda en linea.
+          </h2>
+          <p class="descripcion">
+            Contamos con un buscador avanzado, panel de administracion y una interfaz de usuario optimizada para
+            facilitar la compra de tus clientes.
+          </p>
+          <div class="botones">
+            <button class="btn__prueba">Prueba gratuita</button>
+            <a href="#planes"><button class="btn__precios">Ver precios</button></a>
+          </div>
+        </div>
+        <figure class="img__principal">
+          <img src="./assets/images/ecommerce1.png" alt="">
+        </figure>
+      </div>
+    </section>
+
+    <section id='planes' class="planes">
+      <h2 class="titulo">
+        Nuestros planes se ajustan al tamaño de tu negocio
+      </h2>
+      <div class="cards">
+        <div class="card__planes">
+          <h3 class="titulo">Plan Básico <span>S/. 49.99</span></h3>
+          <h4 class='subtitulo'>Características</h4>
+          <ul class="list__caracteristicas">
+            <li>50 Productos publicados</li>
+            <li>5 productos con alta visibilidad por semana</li>
+            <li>Pasarela de pago incorporada</li>
+            <li>Panel de administración</li>
+            <li>Sistema de inventario</li>
+            <li>Soporte técnico las 24 horas</li>
+          </ul>
+          <a class='link__saber' href="#faq">Saber mas</a>
+          <button class="btn__seleccionar">Seleccionar</button´>
+        </div>
+        <div class="card__planes">
+          <h3 class="titulo">Plan Estándar <span>S/. 99.99</span></h3>
+          <h4 class='subtitulo'>Características</h4>
+          <ul class="list__caracteristicas">
+            <li>50 Productos publicados</li>
+            <li>5 productos con alta visibilidas</li>
+            <li>Pasarela de pago incorporada</li>
+            <li>Panel de administración</li>
+            <li>Sistema de inventario</li>
+            <li>Soporte técnico las 24 horas</li>
+          </ul>
+          <a class='link__saber' href="#faq">Saber mas</a>
+          <button class="btn__seleccionar">Seleccionar</button´>
+        </div>
+        <div class="card__planes">
+          <h3 class="titulo">Plan Premium <span>S/. 199.99</span></h3>
+          <h4 class='subtitulo'>Características</h4>
+          <ul class="list__caracteristicas">
+            <li>50 Productos publicados</li>
+            <li>5 productos con alta visibilidas</li>
+            <li>Pasarela de pago incorporada</li>
+            <li>Panel de administración</li>
+            <li>Sistema de inventario</li>
+            <li>Soporte técnico las 24 horas</li>
+          </ul>
+          <a class='link__saber' href="#faq">Saber mas</a>
+          <button class="btn__seleccionar">Seleccionar</button´>
+        </div>
+      </div>
+
+      <ul class='list__consideraciones'>
+        <li>*Todos nuestros planes tienen 30 días de prueba</li>
+      </ul>
+    </section>
   </main>
+
+  <div id='faq' class="container__faq">
+    <section class="faq">
+      <h2 class="titulo">
+        Preguntas Frecuentes
+      </h2>
+      <ul class="faq__preguntas">
+        <li class="pregunta abierto">
+          ¿Como es la facturación de la tienda en linea?
+          <p class="desplegable abierto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione totam omnis laboriosam sit animi ut velit
+            saepe quae, odit blanditiis excepturi modi corporis iste tempora vero fugiat. Ex, ullam ipsa.
+            Natus debitis unde vel ea blanditiis beatae, iste magni quibusdam itaque fuga quasi. Beatae ipsum quas eaque
+            cum exercitationem. Vel sapiente nesciunt id incidunt nobis? Pariatur autem consequatur sunt veniam.
+          </p>
+        </li>
+        <li class="pregunta">
+          ¿Como administro mi tienda?
+          <p class="desplegable">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Ipsum aliquam possimus eligendi delectus enim expedita nemo tenetur quae fugit qui! Id cum rem repudiandae
+            natus pariatur odio ipsum autem assumenda!
+          </p>
+        </li>
+        <li class="pregunta">
+          ¿Como funciona las busquedas personalizadas?
+          <p class="desplegable">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Ipsum aliquam possimus eligendi delectus enim expedita nemo tenetur quae fugit qui! Id cum rem repudiandae
+            natus pariatur odio ipsum autem assumenda!
+          </p>
+        </li>
+        <li class="pregunta">
+          ¿Como funciona la alta visibilidad de los productos?
+          <p class="desplegable">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Ipsum aliquam possimus eligendi delectus enim expedita nemo tenetur quae fugit qui! Id cum rem repudiandae
+            natus pariatur odio ipsum autem assumenda!
+          </p>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="vender landing__cinta bottom">
+    <h2 class="titulo">Vender en Online Shop</h2>
+    <div class="botones">
+      <button class="btn__cuenta">Ingresar a mi cuenta</button>
+      <button class="btn__prueba">Prueba gratuita</button>
+    </div>
+  </div>
 
 
   <!--Contenedor del footer-->
@@ -424,7 +554,7 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
   </script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="./../js/index.js"></script>
+  <script src="./js/headerFooter.js"></script>
 </body>
 
 </html>
