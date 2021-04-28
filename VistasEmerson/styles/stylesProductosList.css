@@ -1,0 +1,355 @@
+@import url('./stylesPanel.css');
+
+
+/* BARRA CONTROL */
+.barra__control {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.barra__control__opciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.barra__control__form {
+  display: flex;
+  gap: 10px;
+}
+
+.barra__control__form .buscador {
+  width: 320px;
+  position: relative;
+}
+
+.barra__control__form .buscador>i {
+  position: absolute;
+  top: 5px;
+  right: 10px
+}
+
+.barra__control__form .buscador>input {
+  border: 1px solid #bbb;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px 30px 5px 15px;
+}
+
+.barra__control__form .buscador>input:focus {
+  outline: none;
+}
+
+.barra__control__form .filtro {
+  border-color: #bbb;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+.barra__control__vista {
+  display: flex;
+  gap: 5px;
+}
+
+.barra__control__vista button {
+  padding: 3px 4px;
+}
+
+.barra__control__vista .diselected {
+  display: none;
+}
+
+/* VISTA CARDS */
+.cards__productos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards__productos figure,
+img {
+  width: 100%;
+}
+
+.cards__productos .card {
+  border: 1px solid black;
+  width: 23%;
+}
+
+.cards__productos .card__body {
+  padding: 15px;
+}
+
+.cards__productos .titulo {
+  margin-bottom: 10px;
+}
+
+.cards__productos .descripcion {
+  font-size: 10px;
+  margin-bottom: 15px;
+}
+
+.cards__productos .existencias,
+.vendidos {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__productos .precio__acciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.cards__productos button {
+  width: 26px;
+  height: 26px;
+  outline: none;
+  border-style: none;
+  border-radius: 13px;
+}
+
+.cards__productos button:hover {
+  background-color: bisque;
+}
+
+.icon__info {
+  color: #12BF23
+}
+
+.icon__editar {
+  color: #4247D4
+}
+
+.icon__borrar {
+  color: #E51919
+}
+
+/* VISTA LISTA*/
+.vista__lista table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+.vista__lista tr,
+th,
+td {
+  border: solid 1px black;
+  text-align: center;
+}
+
+.vista__lista td:nth-child(2) {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.vista__lista td:nth-child(4) {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.vista__lista td:nth-last-child(1) {
+  width: 12%;
+}
+
+.vista__lista tr:hover {
+  background-color: rgb(211, 253, 239);
+}
+
+.vista__lista button {
+  padding: 4px;
+  margin-right: 5px;
+  border-radius: 15px;
+  border: none;
+}
+
+.vista__lista button:hover {
+  background-color: bisque;
+}
+
+/* PAGINADO */
+.paginado {
+  background-color: #c4c4c4;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.paginado>ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.paginado a {
+  text-decoration: none;
+  color: black;
+}
+
+.paginado .activo {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* BOTON AGREGAR */
+.panel__derecho .agregar {
+  background-color: #1E94E9;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 5px;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  cursor: pointer;
+  border: none
+}
+
+.panel__derecho .agregar:hover {
+  background-color: #5db2ee;
+}
+
+.panel__derecho .agregar:active {
+  border: solid 1px black;
+}
+
+/* Control vista cards / vista lista */
+.contenedor__principal .no__activo {
+  display: none;
+}
+
+/* MODAL VISTA DETALLE */
+.modal__vista__detalle {
+  display: flex;
+  max-width: 900px;
+  min-height: 580px;
+  padding: 25px 60px;
+}
+
+.modal__vista__detalle .info__izquierda {
+  flex: 1 1 0;
+}
+
+.modal__vista__detalle .info__derecha {
+  flex: 1 1 0;
+}
+
+.modal__vista__detalle .titulo {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.modal__vista__detalle .carousel {
+  margin-bottom: 20px;
+}
+
+.modal__vista__detalle .garantia {
+  font-size: 14px;
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+
+.modal__vista__detalle .detalle__titulo {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal__vista__detalle .detalle__descripcion {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.modal__vista__detalle .info__derecha {
+  padding: 35px 15px 15px;
+}
+
+.modal__vista__detalle .estado__vendidos {
+  color: #828282;
+}
+
+.modal__vista__detalle .nombre__producto {
+  margin-bottom: 20px;
+}
+
+.modal__vista__detalle .precio__descuento {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.modal__vista__detalle .envio {
+  color: #12BF23;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.modal__vista__detalle .stock {
+  margin-bottom: 33px;
+}
+
+.modal__vista__detalle .titulo__acerca {
+  font-size: 14px;
+}
+
+.modal__vista__detalle .descripcion__acerca {
+  font-size: 12px;
+  margin-bottom: 41px;
+}
+
+.modal__vista__detalle .titulo__categoria {
+  font-size: 14px;
+}
+
+.modal__vista__detalle .categorias {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.modal__vista__detalle .categorias p {
+  border: solid 1px black;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.modal__vista__detalle .prioridad {
+  font-size: 14px;
+  margin-bottom: 31px;
+}
+
+.modal__vista__detalle .prioridad__tipo {
+  color: #12BF23;
+}
+
+.modal__vista__detalle .botones__acciones .editar {
+  height: 40px;
+  width: 160px;
+  margin-right: 41px;
+  background-color: #4247D4;
+  color: white;
+  border-radius: 6px;
+}
+
+.modal__vista__detalle .botones__acciones .borrar {
+  height: 40px;
+  width: 160px;
+  background-color: #D50F25;
+  color: white;
+  border-radius: 6px;
+}
+
+/* MODAL CREAR PRODUCTO */
